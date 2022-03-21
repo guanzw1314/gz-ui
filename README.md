@@ -1,24 +1,28 @@
-# gz-ui
+# Gz-UI
 
-## Project setup
+- 初始化项目
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+vue create demo
 ```
 
-### Compiles and minifies for production
+- 安装组件库
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+npm install gz-ui
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 全局导入
+```
+import GzUI from 'gz-ui
+import 'gz-ui/lib/gz-ui.css'
+
+Vue.use(GzUi)
+```
+
+- 使用组件
+```
+<template>
+  <div id="app">
+    <gz-button type="primary">按钮</gz-button>
+  </div>
+</template>
+```
